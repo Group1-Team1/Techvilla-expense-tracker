@@ -1,1 +1,1 @@
-alert("welcome to TECHVILLA EXPENCE TRACKER!")
+alert("Welcome to TECHVILLA EXPENCE TRACKER!")
