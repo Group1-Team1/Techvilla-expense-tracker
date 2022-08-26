@@ -1,15 +1,28 @@
-alert("welcome to TECHVILLA EXPENCE TRACKER!")
+alert("welcome to TECHVILLA EXPENCE TRACKER!");
 
-let myPage = document.getElementById("page")
-console.log(myPage)
+const barSlide = () => {
+  const burger = document.querySelector("#bar");
+  const nav = document.querySelector("#option");
+  const navBar = document.querySelectorAll("#option li");
 
-let myHeading = document.getElementById("heading")
+  burger.addEventListener("click", () => {
+    // to toggle
+    nav.classList.toggle("option-active");
 
-let greeting = ("")
-console.log(greeting)
+    // to animate
+    navBar.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `newIcon 0.5s ease forwards ${index / 5 + 0.2}s`;
+      }
+      
+    });
+    
+    // burger animation
+    burger.classList.toggle("toggle");
+  });
+};
 
-techville = () => {
-      greeting= "WELCOME ON BOARD TO OUR EXPENCE TRACKER!"
-      myHeading.textContent = greeting
-}
-techville.textContent = myPage 
+barSlide();
+
