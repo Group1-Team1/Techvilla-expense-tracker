@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #6f42c1;
+    background-color: rgba(167, 176, 243, 1);
 }
 
 /* navbar and logo */
@@ -30,7 +30,7 @@ body{
 }
 
 #bar div{
-    background-color: #20c997;
+    background-color: #198754;
     font-size: 40px;
     margin: 5px;
     height: 3px;
@@ -60,22 +60,23 @@ body{
 }
 
 #option ul li a{
-    color: #20c997;
+    color:#212529;
     text-decoration: none;
     text-transform: capitalize;
 }
 
 #option a:hover{
-    color: #343a40;
+    color: #20c997;
 }
 
 #button{
     background-color: #0d6efd;
-    color: #fd7e14;
+    color: #f8f9fa;
+    font-size: 20px;
     padding: 10px 30px;
     margin: 0 0 0 40px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -99,12 +100,14 @@ body{
 h2{
     font-weight: 700;
     font-size: 45px;
+    color: #343a40;
     padding: 30px;
 }
 
 p{
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 400;
+    color: #f8f9fa;
     padding: 10px 30px;
     text-align: left;
 }
@@ -113,9 +116,10 @@ p{
   margin: 10px 30px;
   padding:15px 30px;
   background-color: #0d6efd;
-  color: #fd7e14;
+  color: #f8f9fa;
+  font-size: 20px;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   cursor: pointer;
 
 }
@@ -124,7 +128,18 @@ p{
     color: #343a40;
 }
 
+#image{
+    margin: 0 50px 50px 30px;
+}
+
+#image img{
+    height:500px;
+    width: 485px;
+}
+
 /* nav and menu responsiveness */
+
+
 @media(max-width:600px) {
     body{
         overflow-x: hidden;
@@ -154,7 +169,7 @@ p{
 
     #option li{
         opacity: 0;
-        background-color: #343a40;
+        background-color: #6c757d;
         transform: translateX(100%);
     }
 
@@ -170,10 +185,51 @@ p{
         margin: 20px 50px 0 30px;
     }
 
+    #bar {
+        margin:0 0 0 40px ;
+    }
+
     #bar div{
         display: block;
     }
+
+    #main{
+        flex-direction: column-reverse;
+    }
+
+    #image{
+        margin: 0 20px 50px 70px;
+    }
+
+    #image img{
+        width: 350px;
+    }
+
+    #context {
+        margin: 0 20px;
+        padding: 0 10px;
+    }
+
+    h2{
+        text-align: center;
+        padding: 0 0 10px 0;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    #context button{
+        margin: 10px 0 30px 200px;
+    }
 }
+
+@media(min-width:375px){
+    #context button{
+        margin: 10px 0 30px 90px;
+    }
+}
+
 
 .optionactive{
     transform:translateX(0%);
