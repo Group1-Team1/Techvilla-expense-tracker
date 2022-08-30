@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(167, 176, 243, 1);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 80%;
+}
+
+header>h3 {
+    text-align: right;
+}
+
+main {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+main>p {
+    padding-bottom: 1rem;
+}
+
+main input {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0;
+    margin-bottom: 0.9rem;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+main label {
+    font-weight: 550;
+    font-size: small;
+}
+
+#submit {
+    background-color: #6357f4;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+
+}
+
+.else h5 {
+    color: #fff;
+    font-size: medium;
+}
+
+.else h6 {
+    color: #fff;
+    font-size: medium;
+    text-align: center;
+}
+
+.else a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+.else a:hover,
+.else a:focus-visible {
+    color: #6357f4;
+}
+
+.social-account {
+    background-color: #D9D9D9;
+    color: #000;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 0.7rem;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+@media screen and (min-width:700px) {
+    main {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:900px) {
+    main {
+        width: 50%;
+
+    }
+
+
+}
