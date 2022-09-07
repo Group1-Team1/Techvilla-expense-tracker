@@ -12,14 +12,14 @@ body{
 /* navbar and logo */
 #navigate{
     display: flex;
-    margin: 15px 80px;
+    margin: 15px 0 15px 80px;
     align-items: center;
     justify-content: space-between;
 }
 
 #tech img{
-    width: 70px;
-    height: 70px;
+    width: 160px;
+    height: 120px;
 }
 
 #bar{
@@ -44,8 +44,9 @@ body{
 #option{
     padding: 0 10px;
     display: flex;
-    margin: 10px;
-    width: 50vw;
+    margin: 10px 0 10px 20px;
+    width: 55vw;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -75,7 +76,7 @@ body{
     color: #f8f9fa;
     font-size: 20px;
     padding: 10px 30px;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 10px;
     border: none;
     text-transform: capitalize;
     border-radius: 20px;
@@ -227,18 +228,20 @@ p{
 
     #context button{
         margin: 10px 0 30px 30%;
+        padding: 15px 80px;
     }
 }
 
-@media(min-width:375px){
+/* @media(min-width:375px){ */
     /* #main{
         flex-direction: column-reverse;
     } */
 
-    #context button{
-        padding: 15px 80px;
+    /* #context button{
+        padding: 15px 50px;
+        margin: 10px 0 30px 20%;
     }
-}
+} */
 
 
 .optionactive{
