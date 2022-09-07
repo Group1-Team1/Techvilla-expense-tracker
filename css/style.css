@@ -6,17 +6,203 @@
 }
 
 body{
-    background-image: url(../asset/unsplash.jpg.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    margin: 50px 30% ;
-    background-color: silver;
+    background-color: #6f42c1;
 }
 
-#heading{
-    color: #6610f2;
+/* navbar and logo */
+#navigate{
+    display: flex;
+    margin: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
 }
-#page{
+
+#tech img{
+    width: 70px;
+    height: 70px;
+}
+
+#bar{
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#bar div{
+    background-color: #20c997;
+    font-size: 40px;
+    margin: 5px;
+    height: 3px;
+    width: 25px;
+    line-height: 15px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#option{
+    padding: 0 10px;
+    display: flex;
+    margin: 10px;
+}
+
+#option ul{
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+
+#option ul li{
+    display:inline; 
+    padding: 0 0 0 20px;
+    
+}
+
+#option ul li a{
+    color: #20c997;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#option a:hover{
+    color: #343a40;
+}
+
+#button{
+    background-color: #0d6efd;
+    color: #fd7e14;
     padding: 10px 30px;
+    margin: 0 0 0 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
+
+#button:hover{
+    background-color: antiquewhite;
+    color: #343a40;
+}
+
+/* body and content */
+#main{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#context{
+    margin: 0 20px 0 0 ;
+    padding: 0 50px 0 0 ;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 45px;
+    padding: 30px;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+#context button{
+  margin: 10px 30px;
+  padding:15px 30px;
+  background-color: #0d6efd;
+  color: #fd7e14;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+#context button:hover{
+    background-color: antiquewhite;
+    color: #343a40;
+}
+
+/* nav and menu responsiveness */
+@media(max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    #option{
+        position: absolute;
+        display: flex;
+        right: 0px;
+        height: 50vh;
+        width: 50%;
+        top: 10vh;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.5s ease-in;
+        
+    }
+
+    
+    #option ul{
+        display: inline-grid;    
+    }
+
+    #option ul li{
+        padding: 20px 0;
+    }
+
+    #option li{
+        opacity: 0;
+        background-color: #343a40;
+        transform: translateX(100%);
+    }
+
+    #option a{
+        padding: 15px 30px;
+    }
+
+    #button{
+        margin: 0 30px 0 20px;
+    }
+
+    #navigate{
+        margin: 20px 50px 0 30px;
+    }
+
+    #bar div{
+        display: block;
+    }
+}
+
+.optionactive{
+    transform:translateX(0%);
+}
+
+/* toggle and animation */
+@keyframes newIcon{
+    from{
+       opacity: 0;
+       transform: translateX(50px);
+    }
+    to{
+       opacity: 1;
+       transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+
 
