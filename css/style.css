@@ -6,13 +6,13 @@
 }
 
 body{
-    background-color: rgba(167, 176, 243, 1);
+    background-color: #F5F5F5;
 }
 
 /* navbar and logo */
 #navigate{
     display: flex;
-    margin: 15px 30px;
+    margin: 15px 80px;
     align-items: center;
     justify-content: space-between;
 }
@@ -30,7 +30,7 @@ body{
 }
 
 #bar div{
-    background-color: #198754;
+    background-color: rgba(119, 159, 229, 1);
     font-size: 40px;
     margin: 5px;
     height: 3px;
@@ -45,17 +45,18 @@ body{
     padding: 0 10px;
     display: flex;
     margin: 10px;
+    width: 50vw;
+    cursor: pointer;
 }
 
 #option ul{
     list-style-type: none;
     margin: 10px 0 0 0;
-    cursor: pointer;
 }
 
 #option ul li{
     display:inline; 
-    padding: 0 0 0 20px;
+    padding: 0 0 0 15px;
     
 }
 
@@ -66,23 +67,24 @@ body{
 }
 
 #option a:hover{
-    color: #20c997;
+    color:rgba(50, 76, 214, 1);
 }
 
 #button{
-    background-color: #0d6efd;
+    background-color: rgba(50, 76, 214, 1);
     color: #f8f9fa;
     font-size: 20px;
     padding: 10px 30px;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 20px;
     border: none;
-    border-radius: 15px;
+    text-transform: capitalize;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 #button:hover{
-    background-color: antiquewhite;
-    color: #343a40;
+    background-color: rgba(104, 225, 253, 1);
+    color: rgba(255, 188, 14, 1);
 }
 
 /* body and content */
@@ -100,32 +102,35 @@ body{
 h2{
     font-weight: 700;
     font-size: 45px;
-    color: #343a40;
+    color: rgba(27, 39, 104, 1);
     padding: 30px;
+    margin-bottom: 20px;
 }
 
 p{
     font-size: 25px;
     font-weight: 400;
-    color: #f8f9fa;
-    padding: 10px 30px;
+    color: rgba(27, 39, 104, 1);
+    padding: 20px 30px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
 #context button{
-  margin: 10px 30px;
-  padding:15px 30px;
-  background-color: #0d6efd;
+  margin: 50px 30px;
+  padding:15px 150px;
+  background-color: rgba(50, 76, 214, 1);
   color: #f8f9fa;
   font-size: 20px;
   border: none;
-  border-radius: 20px;
+  text-transform: capitalize;
+  border-radius: 150px;
   cursor: pointer;
 
 }
 #context button:hover{
-    background-color: antiquewhite;
-    color: #343a40;
+    background-color:rgba(104, 225, 253, 1) ;
+    color:rgba(255, 188, 14, 1) ;
 }
 
 #image{
@@ -150,10 +155,10 @@ p{
         display: flex;
         right: 0px;
         height: 50vh;
-        width: 50%;
+        width: 90vw;
         top: 10vh;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         transition: transform 0.5s ease-in;
         
     }
@@ -164,12 +169,12 @@ p{
     }
 
     #option ul li{
-        padding: 20px 0;
+        padding: 20px 100px;
     }
 
     #option li{
         opacity: 0;
-        background-color: #6c757d;
+        background-color: #F5F5F5;
         transform: translateX(100%);
     }
 
@@ -193,16 +198,17 @@ p{
         display: block;
     }
 
-    #main{
-        flex-direction: column-reverse;
-    }
-
+   
     #image{
         margin: 0 20px 50px 70px;
     }
 
     #image img{
         width: 350px;
+    }
+    
+    #main{
+        flex-direction: column-reverse;
     }
 
     #context {
@@ -220,13 +226,17 @@ p{
     }
 
     #context button{
-        margin: 10px 0 30px 200px;
+        margin: 10px 0 30px 30%;
     }
 }
 
 @media(min-width:375px){
+    /* #main{
+        flex-direction: column-reverse;
+    } */
+
     #context button{
-        margin: 10px 0 30px 90px;
+        padding: 15px 80px;
     }
 }
 
