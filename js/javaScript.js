@@ -1,4 +1,4 @@
-alert("welcome to TECHVILLA EXPENCE TRACKER!");
+alert("welcome to TECHVILLA EXPENSE TRACKER!");
 
 const barSlide = () => {
   const burger = document.querySelector("#bar");
