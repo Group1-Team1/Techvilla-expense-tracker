@@ -6,114 +6,103 @@
 
 body {
     background-color: #F5F5F5;
-    color: #1B2768;
 }
 
 header {
     width: 100%;
-    padding: 1rem 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
 }
 
-header>h1 {
-    font-size: larger;
-    padding-bottom: 0.5rem;
+header img {
+    width: 120px;
+    height: 100px;
+}
+
+header>h3 {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
 }
 
 main {
     width: 100%;
-    padding: 0 1rem 3rem;
+    padding: 0 1rem;
+}
+
+main>p {
+    padding-bottom: 1rem;
 }
 
 main input {
     display: block;
     width: 100%;
-    padding: 0 1rem;
-    height: 28px;
+    padding: 0.6rem 0;
     margin-bottom: 0.9rem;
     border: none;
-    background-color: #6B77B8;
-    color: #FFF;
-}
-
-main input:focus-visible {
-    border: 1px solid #a5a5a5;
-    outline: none;
+    background-color: #D9D9D9;
 }
 
 main label {
     font-weight: 550;
     font-size: small;
-    display: block;
-    line-height: 2;
-}
-
-form {
-    padding-bottom: 3rem;
 }
 
 #submit {
-    background-color: #324CD6;
+    background-color: rgba(50, 76, 214, 1);
     color: #fff;
     font-size: 1rem;
-    height: 39px;
     cursor: pointer;
     transition: all 100ms ease-in-out;
-    border-radius: 20px;
-    margin-top: 3rem;
 
 }
 
-.else {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.else h5 {
+    color: #fff;
+    font-size: medium;
 }
 
-.else h5,
 .else h6 {
-    font-size: 14px;
-    padding-bottom: 0.7rem;
+    color: #fff;
+    font-size: medium;
+    text-align: center;
 }
 
 .else a {
     text-decoration: none;
-    color: inherit;
+    color: #fff;
     transition: .3s ease-in;
 }
 
 .else a:hover,
 .else a:focus-visible {
-    color: #324CD6;
+    color: #6357f4;
 }
 
 .social-account {
-    background-color: #324CD6;
-    color: #1B2768;
+    background-color: #D9D9D9;
+    color: #000;
     border-radius: 10px;
-    width: 80%;
-    height: 36px;
-    margin: 0.7rem 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 0.7rem;
     border: none;
     font-size: large;
     font-weight: 600;
     cursor: pointer;
     transition: all 100ms ease-in-out;
-    text-align: center;
 }
 
-
-.social-account img {
-    width: 20px;
-}
-
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
     main {
         width: 70%;
         margin: 0 auto;
     }
-
 }
-
 
 @media screen and (min-width:900px) {
     main {
