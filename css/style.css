@@ -6,7 +6,12 @@
 }
 
 body{
+    height: 100vh;
+    background: url(/Techvilla-expense-tracker/asset/topcloud.svg) no-repeat top left,
+     url(/Techvilla-expense-tracker/asset/buttomcloud.svg) no-repeat center bottom;
     background-color: #F5F5F5;
+    background-size: 400px;
+    overflow: hidden;
 }
 
 /* navbar and logo */
@@ -19,7 +24,7 @@ body{
 
 #tech img{
     width: 160px;
-    height: 120px;
+    height: 140px;
 }
 
 #bar{
