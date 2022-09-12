@@ -16,7 +16,7 @@ Our users would be able to:
 - Add their incomes and expenses
 - See all transactions made through the month
 - Include their monthly budget 
-- Also get a report 
+- Also get a report of their transactions
 
 ## Where to find everything
 
@@ -41,22 +41,21 @@ The app is built with
 - Os version before installing
 
 ## Authors
-[Ibrahim Hassan](https://github.com/Hassanibrahim0617)
-[Idisi Efezino ](https://github.com/efezinoidisi)
-[Ofure Igberaese](https://github.com/Ofurecole27)
-[Afolabi Bisiriyu]()
-[Akinsiku Oluwafunke](https://github.com/Christianah05)
-[Modupe Ademola]()
-[Farouk Ojeifo](https://github.com/Faroukojey)
-[Anaele Elisha]()
-[Akinlade Florence](https://github.com/CrownfWealth)
-[Godwin Gabriel]()
-[Akintemi Oluwole]()
-[Ufoma Ovolevor](https://github.com/foma4tune)
-[Dahud Yusuf](https://github.com/yusfate4)
-[Jimoh Jamiu]()
+- [Ibrahim Hassan](https://github.com/Hassanibrahim0617)
+- [Idisi Efezino ](https://github.com/efezinoidisi)
+- [Ofure Igberaese](https://github.com/Ofurecole27)
+- [Afolabi Bisiriyu]()
+- [Akinsiku Oluwafunke](https://github.com/Christianah05)
+- [Modupe Ademola]()
+- [Farouk Ojeifo](https://github.com/Faroukojey)
+- [Anaele Elisha]()
+- [Akinlade Florence](https://github.com/CrownfWealth)
+- [Godwin Gabriel]()
+- [Akintemi Oluwole]()
+- [Ufoma Ovolevor](https://github.com/foma4tune)
+- [Dahud Yusuf](https://github.com/yusfate4)
+- [Jimoh Jamiu]()
 
 ## Live pages
-- [GitHub Pages](https://github.com/Group1-Team1/Techvilla-expense-tracker)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- [GitHub Pages](https://group1-team1.github.io/Techvilla-expense-tracker/)
+- [Netlify](techvilla.netlify.app)
