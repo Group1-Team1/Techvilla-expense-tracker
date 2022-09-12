@@ -11,16 +11,10 @@
 
 <body>
     <header>
-        <h1>
-            <img src="./techvilla.jpg" alt="techvilla logo">
-        </h1>
-
-        <h3>
-            expense tracker for monthly budget
-        </h3>
+        <h1>Hi! Welcome</h1>
+        <p>Please sign up and create an account</p>
     </header>
     <main>
-        <p>Please sign up and create account</p>
         <form action="" method="post">
             <label for="fullname">Full name</label>
             <input type="text" id="fullName" name="fullname">
@@ -35,16 +29,24 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password">
 
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="password" name="password">
+
             <input type="submit" value="Create an account" id="submit">
         </form>
 
         <div class="else">
             <h5>Already have an account? <a href="#">Login</a></h5>
-            <a href="#">Forgot password</a>
+
 
             <h6>or continue with</h6>
-            <button class="social-account">Google</button>
-            <button class="social-account">Facebook</button>
+            <button class="social-account">
+                <img src="../asset/google.png" alt="google icon"> Google
+            </button>
+            <button class="social-account">
+                <img src="../asset/facebook.png" alt="facebook icon">
+                Facebook
+            </button>
         </div>
     </main>
     <footer></footer>
