@@ -46,7 +46,7 @@ The app is built with
 - [Ofure Igberaese](https://github.com/Ofurecole27)
 - [Afolabi Bisiriyu]()
 - [Akinsiku Oluwafunke](https://github.com/Christianah05)
-- [Modupe Ademola]()
+- [Modupe Ademola](https://hashnode.com/@ModupeMary)
 - [Farouk Ojeifo](https://github.com/Faroukojey)
 - [Anaele Elisha]()
 - [Akinlade Florence](https://github.com/CrownfWealth)
