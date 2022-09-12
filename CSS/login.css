@@ -8,7 +8,7 @@
 
 body {
     /* height: 100vh; */
-    background-image: url(../images/Vector1.svg), url(../images/Vector2.svg);
+    background-image: url(/images/Vector1.svg), url(/images/Vector2.svg);
     background-position: left top, 30% 110%;
     background-size: 500px;
     background-repeat: no-repeat;
