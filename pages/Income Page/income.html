@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== LINK TO CSS PAGE =============-->
+    <link rel="stylesheet" href="./assets/css/income.css" />
+
+    <!-- =============== FONT AWESOME LINK ================ -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  />
+    <title>Income / Expense</title>
+  </head>
+  <body>
+    <section class="container-section">
+      <!-- ======= Header ======== -->
+      <header id="add-income">
+        <div id="sub-add-income">
+          <img
+            class="arrow-back"
+            src="./assets/images/arrow-back.png"
+            alt="arrow-back"
+          />
+          <p class="add-income-paragraph">Add Income</p>
+        </div>
+      </header>
+
+      <!-- ======= Form action 1 ======== -->
+      <!-- <div class="form-section"> -->
+        <main>
+      <form action="#">
+        <p class="form-type">Type</p>
+
+        <div class="form-radio">
+          <input
+            type="radio"
+            id="income"
+            value="Income"
+            name="income-expense"
+          />
+           <label class="radio-1" for="income">Income</label><br />
+
+          <input
+            type="radio"
+            id="expense"
+            value="Expense"
+            name="income-expense"
+          />
+          <label class="radio-1" for="expense">Expense</label><br />
+        </div>
+      </form>
+
+      <!-- ======== Amount ======= -->
+      <section class="amount-section">
+        <p class="amount-paragraph">Amount</p>
+        <label class="amount-1" for="amount">Amount</label><br />
+
+        <input type="search" id="amount" name="amount" />
+      </section>
+      <br />
+      <!-- ========== Category =========== -->
+      <label class="category-text" for="category"> Category </label>
+      <br />
+      <select class="category-select" id="category" name="category">
+        <option value="business">Business</option>
+        <option value="housing">Housing</option>
+        <option value="transportation">Transportation</option>
+        <option value="personal-care">Personal Care</option>
+        <option value="food">Food</option>
+        <option value="clothes">Clothes</option>
+        <option value="taxes">Taxes</option>
+      </select>
+
+      <br />
+      <br />
+      <!-- ========== Currency =========== -->
+      <label class="category-text" for="currency"> Currency </label>
+      <br />
+      <select id="currency" name="currency">
+        <option value="ngn">NGN</option>
+        <option value="dollar">USD</option>
+      </select>
+
+      <br />
+      <br />
+      <div class="date-time">
+      <!-- ========== Date =========== -->
+      <div class="date1">
+      <label class="category-text" for="date"> Date </label>
+      <div id="date"></div>
+    </div>
+     
+
+      <br />
+      <br />
+      <!-- ========== Time =========== -->
+      <div class="date2">
+      <label class="category-text" for="time"> Time </label>
+      <div id="time"></div>
+    </div>
+</div>
+
+
+      <br />
+      <br />
+      <!-- ========== Mode of Payment =========== -->
+      <label class="category-text" for="payment"> Payment </label>
+      <br />
+      <select id="payment" name="payment">
+        <option value="cash">Cash</option>
+        <option value="transfer">Transfer</option>
+      </select>
+
+      <br /><br />
+      <!-- ========== Payment Purpose =========== -->
+
+      <label class="category-text" for="purpose">Payment Purpose</label><br />
+      <input class="purpose" type="text" id="purpose" name="purpose" /><br /><br />
+
+      <button><a class="payment-link" href="#">Add</a> </button>
+
+      <!--================= SOCIAL MEDIA ICONS ================  -->
+    </main>
+      <ul class="social-media">
+        <p class="social-paragraph">Contact us @ TechVilla</p>
+        <li>
+          <a class="circle" href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a class="circle" href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="circle" href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <!-- </div> -->
+    </section>
+    <script src="./assets/js/income.js"></script>
+  </body>
+</html>
