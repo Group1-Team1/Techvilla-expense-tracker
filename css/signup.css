@@ -62,19 +62,19 @@ main label {
 }
 
 .else h5 {
-    color: rgba(50, 76, 214, 1);
+    color: #fff;
     font-size: medium;
 }
 
 .else h6 {
-    color:rgba(50, 76, 214, 1);
+    color: #fff;
     font-size: medium;
     text-align: center;
 }
 
 .else a {
     text-decoration: none;
-    color:rgba(50, 76, 214, 1);
+    color: #fff;
     transition: .3s ease-in;
 }
 
