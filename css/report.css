@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroundblue: rgba(107, 119, 184, 1);
+  --backgroundWhite: #f5f5f5;
+  --blue: rgba(27, 39, 104, 1);
+  --buttonBlue: rgba(50, 76, 214, 1);
+}
+
+body {
+  background-color: var(--backgroundWhite);
+  background-image: url(/Asset/Background-Desktop.svg);
+  background-repeat: no-repeat;
+  background-position: relative;
+  overflow: scroll;
+}
+
+/* nav and logo */
+#navigation {
+  display: flex;
+  margin: 10px 20px;
+}
+
+#hamburger {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#hamburger div {
+  background-color: var(--blue);
+  font-size: 40px;
+  margin: 5px;
+  height: 3px;
+  width: 30px;
+  line-height: 15px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "rubik";
+  color: var(--blue);
+  margin-left: 15em;
+  text-decoration: none;
+}
+
+#bar ul li {
+  padding: 0 50px;
+  margin: 50px 0;
+  cursor: pointer;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+}
+
+#bar ul li :hover {
+  color: black;
+}
+
+#bar ul li a {
+  text-decoration: none;
+}
+
+#bar button {
+  padding: 12px 16px;
+  background-color: var(--buttonBlue);
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  font-family: "rubik";
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+#bar button:hover {
+  background-color: var(--backgroundWhite);
+  color: var(--buttonBlue);
+}
+
+/* header and body */
+#sub-header {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15em;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+#report {
+  color: var(--blue);
+  font: "Rubik";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  margin-right: 3em;
+  display: inline-flex;
+  align-items: center;
+}
+
+#sub-header a {
+  padding-right: 60px;
+}
+
+#body {
+  display: flex;
+  margin: 10em 30px 20px 30px;
+}
+
+#head {
+  padding: 30px;
+}
+
+#head h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 57px;
+  line-height: 64px;
+  color: var(--blue);
+  padding-bottom: 20px;
+}
+
+#head h5 {
+  color: var(--blue);
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 64px;
+  padding-bottom: 40px;
+}
+
+#head p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.5;
+  color: var(--blue);
+  padding-right: 5em;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#red {
+  position: absolute;
+  width: 516px;
+  height: 139px;
+  left: 745px;
+  top: 350px;
+  border-radius: 20px;
+}
+
+#blue {
+  position: absolute;
+  width: 516px;
+height: 139px;
+  left: 745px;
+  top: 550px;
+}
+
+#green {
+  position: absolute;
+  width: 516px;
+height: 139px;
+  left: 745px;
+  top: 750px;
+}
+
+#pink {
+  position: absolute;
+width: 516px;
+height: 139px;
+left: 745px;
+top: 950px;
+}
+
+#income,
+#Expense,
+#Category,
+#Date {
+  background-color: var(--backgroundblue);
+  color: var(--blue);
+  padding: 10px 0 0 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
+#red p:hover,
+#blue p:hover,
+#green p:hover,
+#pink p:hover {
+  color: black;
+}
+
+/* footer */
+footer {
+  color: var(--blue);
+  float: left;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 20px;
+  position: absolute;
+  left: 760px;
+  top: 1182px;
+}
+
+h4 {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin-left: 20px;
+}
+
+/* media and responsiveness */
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+    width: 375px;
+    height: 506px;
+    background-image: url(/Asset/mobile.svg);
+    background-repeat: no-repeat;
+  }
+  #bar {
+    position: absolute;
+    display: flex;
+    right: 130px;
+    height: 50vh;
+    width: 90vw;
+    top: 15vh;
+    z-index: 5;
+    flex-direction: column;
+    align-items: stretch;
+    transition: transform 0.5s ease-in;
+  }
+
+  #bar ul {
+    display: inline-grid;
+    margin-left: 15px;
+  }
+
+  #bar ul li {
+    padding: 40px 100px;
+    margin: 0;
+  }
+
+  #bar li {
+    opacity: 0;
+    background-color: var(--backgroundWhite);
+    transform: translateX(100%);
+  }
+
+  #navigation img {
+    display: none;
+  }
+
+  #hamburger {
+    margin: 50px 0 0 0;
+  }
+
+  #hamburger div {
+    display: block;
+  }
+
+  #sub-header {
+    position: absolute;
+    left: 75px;
+    top: 10px;
+  }
+
+  #expense {
+    margin-right: 0;
+  }
+
+  #sub-header a {
+    position: absolute;
+    padding-left: 20px;
+    top: 30px;
+    width: 50px;
+    height: 55px;
+  }
+
+  #body {
+    flex-direction: column-reverse;
+  }
+
+  #head {
+    display: none;
+  }
+
+  #red {
+    left: 25px;
+    top: 160px;
+    width: 320px;
+    height: 131px;
+  }
+
+  #blue {
+    width: 320px;
+    height: 131px;
+    left: 25px;
+    top: 360px;
+  }
+
+  #green {
+    width: 320px;
+    height: 131px;
+    left: 25px;
+    top: 560px;
+  }
+
+  #pink {
+    width: 320px;
+    height: 131px;
+    left: 25px;
+    top: 760px;
+  }
+
+  #dashboard img {
+    margin: 5px 30px 0 30%;
+  }
+
+  #red p,
+  #blue p,
+  #green p,
+  #pink p {
+    margin: 5px 30px 0 30%;
+  }
+
+  footer {
+    left: 30px;
+    top: 892px;
+    font-size: 18px;
+  }
+}
+
+.option-active {
+  transform: translateX(0%);
+}
+
+/* toggle and animation */
+@keyframes newIcon {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
